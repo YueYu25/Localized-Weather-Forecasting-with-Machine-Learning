@@ -1,1 +1,1 @@
-# Localized-Weather-Forecasting-with-Machine-Learning
+# Localized Weather Forecasting with Machin Learning
