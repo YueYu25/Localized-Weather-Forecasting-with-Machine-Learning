@@ -1,2 +1,4 @@
 # Localized Weather Forecasting with Machine Learning
-The code mainly consists of four parts. 
+This is code related to the paper "Localized Weather Forecasting with Machine Learning" from the University of Edinburgh.
+
+The code mainly consists of four parts. Patch_Extraction.ipynb is mainly used to test the optimal patch size and verify the rationality of the selected patch size with a saliency map. GPU_Memory_Test.ipynb is mainly used to test the peak video memory required by the local weather prediction model and the global weather prediction model and the time required for a forward-backward training. Local_Weather_Forecasting_with_Pooling_Layer.ipynb is mainly about the experimental results of the local weather forecasting model using the pooling layer, and Local_Weather_Forecasting_without_Pooling_Layer.ipynb is mainly about the experimental results of the local weather forecasting model withoutusing the pooling layer.
