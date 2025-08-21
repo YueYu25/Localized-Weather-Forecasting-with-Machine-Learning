@@ -86,8 +86,6 @@ The models expect weather data in the following format:
 | Local Prediction Model With Pooling | 15.4754 | around 15 minutes | 1024|
 | Local Prediction Model Without Pooling | 13.8509 | around 3 hours | 512 |
 
-3. **Computational Efficiency**: [Summary of memory and time requirements]
-
 
 
 
