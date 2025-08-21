@@ -49,9 +49,7 @@ The codebase consists of four main Jupyter notebooks, each addressing different 
 ### Quick Start
 
 1. **Patch Size Optimization**:
-   ```bash
-   jupyter notebook Patch_Extraction.ipynb
-   ```
+   `Patch_Extraction.ipynb`
    Run this notebook first to determine optimal patch sizes for the dataset.
 
 2. **Model Training and Evaluation**:
