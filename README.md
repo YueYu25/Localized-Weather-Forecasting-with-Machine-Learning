@@ -79,11 +79,12 @@ The models expect weather data in the following format:
 
 1. **Optimal Patch Size**: Through sweep experiments on the receptive field and verification through saliency maps, we found that the optimal patch size is about **65**
 2. **Performance Comparison**:
-### Performance Metrics ###
+
 | Model Type | MSE (t = 16) | Training Time (epoches = 10) |  Maximum Batch Size |
 |------------|--------------|------------------------------|---------------------|
-| With Pooling | 15.4754 | around 15 minutes | 1024|
-| Without Pooling | 13.8509 | around 3 hours | 512 |
+| Global Prediction Model | 17.5638 | around 12 minutes | 16 |
+| Local Prediction Model With Pooling | 15.4754 | around 15 minutes | 1024|
+| Local Prediction Model Without Pooling | 13.8509 | around 3 hours | 512 |
 
 3. **Computational Efficiency**: [Summary of memory and time requirements]
 
