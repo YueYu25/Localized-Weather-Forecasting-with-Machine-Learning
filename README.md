@@ -66,8 +66,7 @@ The models expect weather data in the following format:
 - **Spatial Resolution**: `256 × 512` (latitude × longitude) global regular grid.
 - **Temporal Resolution**: sequences of `1008` time steps sampled every **6 hours**  
 - **Variables**: horizontal wind **velocity** with two channels  
-  `u` (zonal, x-direction) and `v` (meridional, y-direction). Shape per sequence:
-  `(1, 1008, 256, 512, 2)`. 
+  `u` (zonal, x-direction) and `v` (meridional, y-direction).
 - **Format**: **HDF5**. The commonly used groups/keys are:
   - `boundary_conditions` (e.g., `phi_periodic`, `theta_open`)
   - `dimensions` (`phi`, `theta`, `time`)
@@ -78,7 +77,7 @@ The models expect weather data in the following format:
 
 ### Key Findings
 
-1. **Optimal Patch Size**: [Summary of optimal patch size findings]
+1. **Optimal Patch Size**: Through sweep experiments on the receptive field and verification through saliency maps, we found that the optimal patch size is about **65**
 2. **Performance Comparison**: 
    - Models with pooling layers: [Performance metrics]
    - Models without pooling layers: [Performance metrics]
