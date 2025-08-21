@@ -25,24 +25,20 @@ The codebase consists of four main Jupyter notebooks, each addressing different 
 - Validates the rationality of selected patch sizes using saliency map analysis
 - Provides visualization tools for understanding spatial feature importance
 
+### `Local_Weather_Forecasting_with_Pooling_Layer.ipynb`
+**Purpose**: Local forecasting with pooling layers
+- Implements and evaluates local weather forecasting models incorporating pooling layers
+- Visualize the predictions of the local wheather forecasting model with pooling layers
+
+### `Local_Weather_Forecasting_without_Pooling_Layer.ipynb`
+**Purpose**: Local forecasting without pooling layers
+- Implements and evaluates local weather forecasting models without pooling layers
+- Visualize the predictions of the local wheather forecasting model without pooling layers
+
 ### `GPU_Memory_Test.ipynb`
 **Purpose**: Computational resource analysis
 - Benchmarks peak GPU memory requirements for both local and global weather prediction models
 - Measures forward-backward training time requirements
-- Provides performance comparisons between different model architectures
-
-### `Local_Weather_Forecasting_with_Pooling_Layer.ipynb`
-**Purpose**: Local forecasting with pooling layers
-- Implements and evaluates local weather forecasting models incorporating pooling layers
-- Presents experimental results and performance metrics
-- Analyzes the impact of pooling operations on prediction accuracy
-
-### `Local_Weather_Forecasting_without_Pooling_Layer.ipynb`
-**Purpose**: Local forecasting without pooling layers
-- Implements local weather forecasting models without pooling layers
-- Provides comparative analysis against pooling-based approaches
-- Evaluates trade-offs between model complexity and prediction accuracy
-
 
 ## Usage
 
