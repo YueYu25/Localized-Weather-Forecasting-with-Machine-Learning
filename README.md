@@ -50,17 +50,15 @@ The codebase consists of four main Jupyter notebooks, each addressing different 
 
 1. **Patch Size Optimization**:
    `Patch_Extraction.ipynb`
-   Run this notebook first to determine optimal patch sizes for the dataset.
+   ,run this notebook first to determine optimal patch sizes for the dataset.
 
 2. **Model Training and Evaluation**:
    - For models with pooling: `Local_Weather_Forecasting_with_Pooling_Layer.ipynb`
    - For models without pooling: `Local_Weather_Forecasting_without_Pooling_Layer.ipynb`
 
 3. **Resource Assessment**:
-   ```bash
-   jupyter notebook GPU_Memory_Test.ipynb
-   ```
-   Use this to understand computational requirements before training.
+   ` GPU_Memory_Test.ipynb`
+   ,use this to find the peak GPU memory for training.
 
 ### Data Requirements
 
@@ -88,10 +86,10 @@ The models expect weather data in the following format:
 
 ### Performance Metrics
 
-| Model Type | RMSE | MAE | Training Time | Memory Usage |
-|------------|------|-----|---------------|--------------|
-| With Pooling | [Value] | [Value] | [Value] | [Value] |
-| Without Pooling | [Value] | [Value] | [Value] | [Value] |
+| Model Type | MSE (t = 16) | Training Time (epoches = 10) | Memory Usage at the Maximum Batch Size |
+|------------|--------------|------------------------------|----------------------------------------|
+| With Pooling | 15.4754 | around 15 minutes | 1024|
+| Without Pooling | 13.8509 | around 3 hours | 512 |
 
 
 
@@ -103,21 +101,18 @@ If you use this work in your research, please cite:
 @mastersthesis{yu2024localized,
   title={Localized Weather Forecasting with Machine Learning},
   author={Yu, Yue},
-  year={2024},
+  year={2025},
   school={University of Edinburgh},
   type={MSc Thesis},
   program={Computational and Applied Mathematics}
 }
 ```
 
-## License
-
-[Specify license, e.g., MIT, Apache 2.0, etc.]
 
 ## Contact
 
 For questions about this research, please contact:
-- **Yue Yu**: [email@example.com]
+- **Yue Yu**: [13221921179@163.com]
 - **Supervisors**: 
   - Francesco Tudisco: [francesco.tudisco@ed.ac.uk]
   - Harris Abdul Majid: [harris.majid@ed.ac.uk]
@@ -126,8 +121,7 @@ For questions about this research, please contact:
 
 - University of Edinburgh; School of Mathematics
 - CAM MSc Program
-- [Any other acknowledgments, funding sources, data providers, etc.]
 
 ---
 
-*This project was completed as part of the MSc Computational and Applied Mathematics program at the University of Edinburgh, 2024.*
+*This project was completed as part of the MSc Computational and Applied Mathematics program at the University of Edinburgh, 2025.*
