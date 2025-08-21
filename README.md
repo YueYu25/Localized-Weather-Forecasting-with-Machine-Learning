@@ -52,25 +52,32 @@ The codebase consists of four main Jupyter notebooks, each addressing different 
    ```bash
    jupyter notebook Patch_Extraction.ipynb
    ```
-   Run this notebook first to determine optimal patch sizes for your dataset.
+   Run this notebook first to determine optimal patch sizes for the dataset.
 
-2. **Resource Assessment**:
+2. **Model Training and Evaluation**:
+   - For models with pooling: `Local_Weather_Forecasting_with_Pooling_Layer.ipynb`
+   - For models without pooling: `Local_Weather_Forecasting_without_Pooling_Layer.ipynb`
+
+3. **Resource Assessment**:
    ```bash
    jupyter notebook GPU_Memory_Test.ipynb
    ```
    Use this to understand computational requirements before training.
 
-3. **Model Training and Evaluation**:
-   - For models with pooling: `Local_Weather_Forecasting_with_Pooling_Layer.ipynb`
-   - For models without pooling: `Local_Weather_Forecasting_without_Pooling_Layer.ipynb`
-
 ### Data Requirements
 
 The models expect weather data in the following format:
-- **Spatial Resolution**: [Specify something]
-- **Temporal Resolution**: [Specify temporal resolution]
-- **Variables**: [List key weather variables used]
-- **Format**: [Specify data format, e.g., NetCDF, CSV, etc.]
+- **Spatial Resolution**: `256 × 512` (latitude × longitude) global regular grid. :contentReference[oaicite:0]{index=0}  
+- **Temporal Resolution**: sequences of `1008` time steps sampled every **6 hours**  
+  (≈ 252 days per sequence). :contentReference[oaicite:1]{index=1}
+- **Variables**: horizontal wind **velocity** with two channels  
+  `u` (zonal, x-direction) and `v` (meridional, y-direction). Shape per sequence:
+  `(1, 1008, 256, 512, 2)`. :contentReference[oaicite:2]{index=2}
+- **Format**: **HDF5**. The commonly used groups/keys are:
+  - `boundary_conditions` (e.g., `phi_periodic`, `theta_open`)
+  - `dimensions` (`phi`, `theta`, `time`)
+  - `t0_fields/height`  *(optional, not required by our models)*
+  - `t1_fields/velocity`  *(required; shape `(1, 1008, 256, 512, 2)`)*
 
 ## Results
 
