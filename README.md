@@ -90,7 +90,7 @@ The models expect weather data in the following format:
 If you use this work in your research, please cite:
 
 ```bibtex
-@mastersthesis{yu2024localized,
+@mastersthesis{yu2025localized,
   title={Localized Weather Forecasting with Machine Learning},
   author={Yu, Yue},
   year={2025},
