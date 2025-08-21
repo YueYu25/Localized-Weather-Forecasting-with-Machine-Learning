@@ -67,12 +67,11 @@ The codebase consists of four main Jupyter notebooks, each addressing different 
 ### Data Requirements
 
 The models expect weather data in the following format:
-- **Spatial Resolution**: `256 × 512` (latitude × longitude) global regular grid. :contentReference[oaicite:0]{index=0}  
+- **Spatial Resolution**: `256 × 512` (latitude × longitude) global regular grid.
 - **Temporal Resolution**: sequences of `1008` time steps sampled every **6 hours**  
-  (≈ 252 days per sequence). :contentReference[oaicite:1]{index=1}
 - **Variables**: horizontal wind **velocity** with two channels  
   `u` (zonal, x-direction) and `v` (meridional, y-direction). Shape per sequence:
-  `(1, 1008, 256, 512, 2)`. :contentReference[oaicite:2]{index=2}
+  `(1, 1008, 256, 512, 2)`. 
 - **Format**: **HDF5**. The commonly used groups/keys are:
   - `boundary_conditions` (e.g., `phi_periodic`, `theta_open`)
   - `dimensions` (`phi`, `theta`, `time`)
